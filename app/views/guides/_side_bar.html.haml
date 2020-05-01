@@ -4,9 +4,9 @@
       .top-items__user
         %img.top-items__user__image{src: "/user_images/default_user.jpeg", alt: "プロフィール写真"}
         .top-items__user__name
-          yuki
+          = current_user.name
       .top-items__icon
-        = link_to "#", class: "setting-btn" do
+        = link_to edit_user_path(current_user), class: "setting-btn" do
           = icon('fas', 'cog')
   .side-bar__like
     .title

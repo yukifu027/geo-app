@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'guides/index'
-
+  devise_for :users
   root "guides#index"
+  resources :users, only: [:edit, :update]
 end

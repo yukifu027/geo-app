@@ -29,7 +29,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|nickname|string|null: false|
+|name|string|null: false|
 |image_name|string|null: false|
 ### Association
 - has_many :likes

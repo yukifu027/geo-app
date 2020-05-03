@@ -13,8 +13,9 @@
       = icon('fas', 'thumbs-up')
       いいね
     .contents
-      = link_to "#" do
-        %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
+      - @likes.each do |like|
+        = link_to guide_path(like.guide.id) do
+          %img.contents__image{src: like.guide.image, alt: "ガイドトップ画像"}
   .side-bar__buy
     .title
       = icon('fas', 'shopping-cart')

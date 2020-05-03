@@ -1,7 +1,16 @@
 .show-guide
   %img.show-guide__image{src: @guide.image, alt: "ガイドトップ写真"}
   .show-guide__title
-    = @guide.title
+    .title
+      = @guide.title
+    .like
+      - if Like.find_by(user_id: current_user.id, guide_id: @guide.id)
+        = link_to guide_like_path(@guide.id), method: :delete do
+          = icon("fas", "heart")
+      - else
+        = link_to guide_likes_path(@guide.id), method: :post do
+          = icon("far", "heart")
+      = @likes_count
   .show-guide__outline
     = @guide.body
   .show-guide__detail

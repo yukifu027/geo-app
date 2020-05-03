@@ -1,6 +1,26 @@
 .show-guide
-  .show-guide__image
+  %img.show-guide__image{src: @guide.image, alt: "ガイドトップ写真"}
   .show-guide__title
-    図解
+    = @guide.title
+  .show-guide__outline
+    = @guide.body
   .show-guide__detail
-  .show-guide__message
+    = link_to "#", class: "next-btn" do
+      続きを読む
+  .show-guide__form-area
+    = form_for [@guide, @comment] do |f|
+      = f.text_field :text, class: "form-message", placeholder: "コメントを書く（任意）"
+      = f.submit "Send", class: "form-btn"
+  .show-guide__comment
+    .contents
+      - @comments.each do |comment|
+        .content
+          .content__items
+            .user
+              %img.user__image{src: comment.user.image, alt: "プロフィール写真"}
+              .user__name
+                = comment.user.name
+            = link_to "#", class: "edit-btn" do
+              削除
+          .content__message
+            = comment.text

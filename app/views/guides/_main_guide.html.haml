@@ -21,8 +21,9 @@
       .title
         北海道地方
       .contents
-        = link_to "#" do
-          %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイド画像"}
+        - @guides.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__tohoku
       .title
         東北地方

@@ -2,7 +2,7 @@
   .side-bar__user
     .top-items
       .top-items__user
-        %img.top-items__user__image{src: @user.image, alt: "プロフィール写真"}
+        %img.top-items__user__image{src: current_user.image, alt: "プロフィール写真"}
         .top-items__user__name
           = current_user.name
       .top-items__icon
@@ -15,15 +15,6 @@
     .contents
       = link_to "#" do
         %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      = link_to "#" do
-        %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}        
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}        
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}       
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
   .side-bar__buy
     .title
       = icon('fas', 'shopping-cart')
@@ -31,11 +22,3 @@
     .contents
       = link_to "#" do
         %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}        
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
-      %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}

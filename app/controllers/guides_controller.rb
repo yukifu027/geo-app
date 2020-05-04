@@ -1,5 +1,11 @@
 class GuidesController < ApplicationController
   def index
+    return nil if params[:keyword] == ""
+    @guides_key = Guide.where(['title LIKE ?', "%#{params[:keyword]}%"] )
+    respond_to do |format|
+      format.html
+      format.json
+    end
     @guides = Guide.all
     @likes = Like.where(user_id: current_user.id)
   end

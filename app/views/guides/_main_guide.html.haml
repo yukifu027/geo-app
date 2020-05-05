@@ -35,41 +35,55 @@
       %a.title{name: "hokkaido"}
         北海道地方
       .contents
-        - @guides.each do |guide|
+        - @guides_hokkaido.each do |guide|
           = link_to guide_path(guide.id) do
             %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__tohoku
       %a.title{name: "tohoku"}
         東北地方
       .contents
-        .contents__image
+        - @guides_tohoku.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__kantou
       %a.title{name: "kanto"}
         関東地方
       .contents
-        .contents__image
+        - @guides_kantou.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__tokai
       %a.title{name: "tokai"}
         東海地方
       .contents
-        .contents__image
+        - @guides_tokai.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__kansai
       %a.title{name: "kansai"}
         関西地方
       .contents
-        .contents__image
+        - @guides_kansai.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__chugoku
       %a.title{name: "chugoku"}
         中国地方
       .contents
-        .contents__image
+        - @guides_chugoku.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__shikoku
       %a.title{name: "shikoku"}
         四国地方
       .contents
-        .contents__image
+        - @guides_shikoku.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}
     .main-guide__area__kyushu
       %a.title{name: "kyushu_okinawa"}
         九州・沖縄地方
       .contents
-        .contents__image
+        - @guides_kyushu.each do |guide|
+          = link_to guide_path(guide.id) do
+            %img.contents__image{src: guide.image, alt: "ガイド画像"}

@@ -49,6 +49,10 @@
         border-radius: 10%;          
         object-fit: cover;
       }
+      &__image:hover{
+        transform: scale(1.1, 1.1);
+        transition: 0.5s;
+      }
     }
   }
   &__buy{
@@ -70,6 +74,10 @@
         height: 70px;
         border-radius: 10%;          
         object-fit: cover;
+      }
+      &__image:hover{
+        transform: scale(1.1, 1.1);
+        transition: 0.5s;
       }
     }
   }

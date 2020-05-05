@@ -45,9 +45,6 @@
       height: 40px;
       border-radius: 10px;
     }
-    .form-btn{
-
-    }
   }
   &__comment{
     overflow: scroll;
@@ -56,7 +53,7 @@
       height: 300px;
       margin: 0 auto;
       .content{
-        margin: 20px 0;
+        margin: 20px 40px;
         &__items{
           display: flex;
           justify-content: space-between;
@@ -73,9 +70,6 @@
               margin: 10px 0 0 10px;
               font-weight: bold;
             }
-          }
-          .edit-btn{
-            text-decoration: none;
           }
         }
         &__message{

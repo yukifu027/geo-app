@@ -29,7 +29,5 @@
               %img.user__image{src: comment.user.image, alt: "プロフィール写真"}
               .user__name
                 = comment.user.name
-            = link_to "#", class: "edit-btn" do
-              削除
           .content__message
             = comment.text

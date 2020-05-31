@@ -52,3 +52,6 @@ production:
   database: geo-app_production
   username: geo-app
   password: <%= ENV['GEO-APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

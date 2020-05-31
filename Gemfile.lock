@@ -130,6 +130,7 @@ GEM
     orm_adapter (0.5.0)
     payjp (0.0.7)
       rest-client (~> 2.0)
+    pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -245,6 +246,7 @@ DEPENDENCIES
   mini_magick
   mysql2 (>= 0.3.18, < 0.6.0)
   payjp
+  pg
   pry-rails
   puma (~> 3.0)
   rails (~> 5.0.7, >= 5.0.7.2)

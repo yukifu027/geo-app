@@ -1,4 +1,5 @@
 .detail_guide
   .contents
-    - @pictures.each do |picture|
-      %img.content{src: picture.picture, alt: "guide"}
+    .content
+      - @pictures.each do |picture|
+        %img.content{src: picture.picture, alt: "guide"}

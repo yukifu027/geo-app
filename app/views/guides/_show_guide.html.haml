@@ -5,21 +5,28 @@
       = @guide.title
     .like
       - if Like.find_by(user_id: current_user.id, guide_id: @guide.id)
-        = link_to guide_like_path(@guide.id), method: :delete do
+        = link_to guide_like_path(@guide.id), class: 'like-btn', method: :delete do
           = icon("fas", "heart")
       - else
-        = link_to guide_likes_path(@guide.id), method: :post do
+        = link_to guide_likes_path(@guide.id), class: 'unlike-btn', method: :post do
           = icon("far", "heart")
       = @likes_count
   .show-guide__outline
     = @guide.body
   .show-guide__detail
-    = link_to "#", class: "next-btn" do
-      続きを読む
+    - if UserGuide.find_by(user_id: current_user.id, guide_id: @guide.id)
+      = link_to guide_pictures_path(@guide.id), class: "next-btn" do
+        続きを読む
+    - else
+      支払い金額￥
+      = @guide.price 
+      = form_tag pay_guide_path do
+        :plain
+        %script{type: "text/javascript", src: "https://checkout.pay.jp", class:"payjp-button", "data-text": "購入する", "data-key": "pk_test_6b475e7b2164c361b2105454"}
   .show-guide__form-area
     = form_for [@guide, @comment] do |f|
       = f.text_field :text, class: "form-message", placeholder: "コメントを書く（任意）"
-      = f.submit "Send", class: "form-btn"
+      = f.submit "送信", class: "form-btn"
   .show-guide__comment
     .contents
       - @comments.each do |comment|

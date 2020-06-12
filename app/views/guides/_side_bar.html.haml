@@ -21,5 +21,6 @@
       = icon('fas', 'shopping-cart')
       購入済みガイド
     .contents
-      = link_to "#" do
-        %img.contents__image{src: "/user_images/default_user.jpeg", alt: "ガイドトップ画像"}
+      - @solds.each do |sold|
+        = link_to guide_path(sold.guide.id) do
+          %img.contents__image{src: sold.guide.image, alt: "ガイドトップ画像"}

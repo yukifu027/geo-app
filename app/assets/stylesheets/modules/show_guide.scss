@@ -19,7 +19,14 @@
     .like{
       font-size: 30px;
       font-weight: bold;
+      
       padding: 15px 80px 15px 0;
+      .like-btn{
+        color: #e54747;
+      }
+      .unlike-btn{
+        color: #808080; 
+      }
     }
   }
   &__outline{
@@ -28,6 +35,7 @@
   }
   &__detail{
     text-align: center;
+    font-weight: bold;
     .next-btn{
       display: inline-block;
       padding: 15px 410px;
@@ -40,10 +48,18 @@
   }
   &__form-area{
     text-align: center;
+    margin-top: 30px;
     .form-message{
       width: 600px;
       height: 40px;
-      border-radius: 10px;
+    }
+    .form-btn{
+      background-color: black;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      width: 50px;
+      height: 40px;
     }
   }
   &__comment{

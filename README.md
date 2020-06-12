@@ -6,8 +6,8 @@
   <a href="https://www.ruby-lang.org/ja/"><img src="ruby.jpg" width="80px;" /></a>
   <br>
   <a><img src="GitHub-Mark-64px.png" height="80px;" /></a>
-  <a href="PWA公式サイトURL"><img src="logo-mysql-170x115.png" height="45px;" /></a>
-  <a href="firealpaca公式サイトURL"><img src="https://〜.png" height="40px;" /></a>
+  <a><img src="logo-mysql-170x115.png" height="45px;" /></a>
+  <a><img src="heroku-logo-solid-gradient.jpg" height="40px;" /></a>
   <a href="sweetalert公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
 </p>
 Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code

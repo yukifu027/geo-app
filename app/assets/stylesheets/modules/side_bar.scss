@@ -26,6 +26,9 @@
       &__icon{
         font-size: 25px;
         line-height: 150px;
+        .setting-btn{
+          color: gray;
+        }
       }
     }
   }

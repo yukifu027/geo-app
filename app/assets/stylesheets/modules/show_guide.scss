@@ -19,7 +19,14 @@
     .like{
       font-size: 30px;
       font-weight: bold;
+      
       padding: 15px 80px 15px 0;
+      .like-btn{
+        color: #e54747;
+      }
+      .unlike-btn{
+        color: #808080; 
+      }
     }
   }
   &__outline{
@@ -36,7 +43,14 @@
     .form-message{
       width: 600px;
       height: 40px;
-      border-radius: 10px;
+    }
+    .form-btn{
+      background-color: black;
+      color: white;
+      font-size: 13px;
+      font-weight: bold;
+      width: 50px;
+      height: 40px;
     }
   }
   &__comment{

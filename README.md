@@ -3,7 +3,7 @@
 <h2 align="center">Travel Geographic</h2>
 
 <p align="center">
-  <a href="https://www.ruby-lang.org/ja/"><img src="ruby.png" width="80px;" /></a>
+  <a href="https://www.ruby-lang.org/ja/"><img src="ruby.jpg" width="80px;" /></a>
   <br>
   <a href="PWA公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
   <a href="Firebase公式サイトURL"><img src="https://〜.png" height="45px;" /></a>

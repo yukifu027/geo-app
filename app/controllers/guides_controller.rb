@@ -9,10 +9,12 @@ class GuidesController < ApplicationController
       card: params['payjp-token'], 
       currency: 'jpy'
     )
-    # @user_guide = User_guide.new(user_id: current_user.id, guide_id: @guide.id)
-    # @user_guide.save(guide_params)
-    redirect_to guide_pictures_path(@guide.id)
-    # redirect_to guide_path(@guide.id)
+    @user_guide = UserGuide.new(user_id: current_user.id, guide_id: @guide.id)
+    if @user_guide.save
+      redirect_to guide_pictures_path(@guide.id)
+    else
+      redirect_to guide_path(@guide.id)
+    end
   end
 
   def index

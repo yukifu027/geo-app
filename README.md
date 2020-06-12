@@ -1,6 +1,16 @@
-![Mirai-app](https://i.gyazo.com/f17e8e08dcc96a2da9fa422c5fb3e13f.gif)
+![Geo-app](https://i.gyazo.com/6b5ce400c912cfebf8527eabe40d2705.gif)
 
-<h2 align="center">Mirai</h2>
+<h2 align="center">Travel Geographic</h2>
+
+<p align="center">
+  <a href="https://www.ruby-lang.org/ja/"><img src="ruby.png" width="80px;" /></a>
+  <br>
+  <a href="PWA公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
+  <a href="Firebase公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
+  <a href="firealpaca公式サイトURL"><img src="https://〜.png" height="40px;" /></a>
+  <a href="sweetalert公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
+</p>
+Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code
 
 # 概要
 **震災遺構や戦跡など人類の負の遺産をレビューできる**Webアプリです。ユーザーは、気になる負の遺産を検索し、それに対しコメントを残すことができます。

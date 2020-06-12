@@ -1,4 +1,4 @@
-![Geo-app](https://i.gyazo.com/6b5ce400c912cfebf8527eabe40d2705.gif)
+![Geo-app](https://i.gyazo.com/7e483251f01d80ac5c33bbe074341d69.gif)
 
 <h2 align="center">Travel Geographic</h2>
 

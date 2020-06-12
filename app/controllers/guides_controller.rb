@@ -1,4 +1,19 @@
 class GuidesController < ApplicationController
+  require 'payjp'
+
+  def pay
+    @guide = Guide.find(params[:id])
+    Payjp.api_key = "sk_test_75a1cf07d11562a783711721"
+    Payjp::Charge.create(
+      amount: @guide.price, 
+      card: params['payjp-token'], 
+      currency: 'jpy'
+    )
+    # @user_guide = User_guide.new(user_id: current_user.id, guide_id: @guide.id)
+    # @user_guide.save(guide_params)
+    redirect_to guide_pictures_path(@guide.id)
+    # redirect_to guide_path(@guide.id)
+  end
 
   def index
     return nil if params[:keyword] == ""
@@ -26,4 +41,5 @@ class GuidesController < ApplicationController
     @likes_count = Like.where(guide_id: @guide.id).count
     @likes = Like.where(user_id: current_user.id)
   end
+
 end

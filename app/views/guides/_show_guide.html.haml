@@ -14,8 +14,11 @@
   .show-guide__outline
     = @guide.body
   .show-guide__detail
-    = link_to "#", class: "next-btn" do
-      続きを読む
+    支払い金額￥
+    = @guide.price 
+    = form_tag pay_guide_path do
+      :plain
+      %script{type: "text/javascript", src: "https://checkout.pay.jp", class:"payjp-button", "data-text": "購入する", "data-key": "pk_test_6b475e7b2164c361b2105454"}
   .show-guide__form-area
     = form_for [@guide, @comment] do |f|
       = f.text_field :text, class: "form-message", placeholder: "コメントを書く（任意）"

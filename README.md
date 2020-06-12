@@ -2,16 +2,6 @@
 
 <h2 align="center">Travel Geographic</h2>
 
-<p align="center">
-  <a href="https://www.ruby-lang.org/ja/"><img src="ruby.jpg" width="80px;" /></a>
-  <br>
-  <a><img src="GitHub-Mark-64px.png" height="80px;" /></a>
-  <a><img src="logo-mysql-170x115.png" height="45px;" /></a>
-  <a><img src="heroku-logo-solid-gradient.jpg" height="40px;" /></a>
-  <a href="sweetalert公式サイトURL"><img src="https://〜.png" height="45px;" /></a>
-</p>
-Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code
-
 # 概要
 **震災遺構や戦跡など人類の負の遺産をレビューできる**Webアプリです。ユーザーは、気になる負の遺産を検索し、それに対しコメントを残すことができます。
 
@@ -52,6 +42,7 @@ https://miraiapp.herokuapp.com/
 
 # 使用技術(開発環境)
 Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code
+
 # 課題や今後実装したい機能
 <dl>
   <dt>本番環境で画像が表示されない</dt>

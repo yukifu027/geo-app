@@ -20,7 +20,7 @@ https://travelgeographic.herokuapp.com/
 
 1. トップページからログイン
 
-![Mirai-app](https://i.gyazo.com/1dfc8c74e5d9fb4654e82db4d8639ad5.gif)
+![Mirai-app](fafb49f70f9e7f43b5ccdb7b95a16851.gif)
 
 2. 検索欄または一覧から気になる遺産を選ぶ（初期データとして登録されている）
 

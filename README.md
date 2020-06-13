@@ -29,9 +29,11 @@ https://travelgeographic.herokuapp.com/
 
 #### 2-2. 日本地図
 
+![Geo-app](520514194092b94eb2f56b3134233fe8.gif)
+
 3.　負の遺産へのレビューを行う
 
-![Mirai-app](https://i.gyazo.com/fedeeba42e1a31c36b52063154e4e8b1.gif)
+![M\i-app](520514194092b94eb2f56b3134233fe8.gif)
 
 （4. ユーザー自ら遺産の追加も可能）
 

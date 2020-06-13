@@ -33,7 +33,7 @@ https://travelgeographic.herokuapp.com/
 
 ### 3. お気に入り登録または購入
 
-![M\i-app](520514194092b94eb2f56b3134233fe8.gif)
+![M\i-app](d781605cd975f7abcc70e9075fa78da1.gif)
 
 ### 4. レビュー
 

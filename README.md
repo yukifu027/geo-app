@@ -25,7 +25,7 @@ https://travelgeographic.herokuapp.com/
 ### 2. ガイドを探す
 #### 2-1. インクリメンタルサーチ
 
-![Geo-app]()
+![Geo-app](4715faf4a3055276e849122a5d7e4e97.gif)
 
 #### 2-2. 日本地図
 

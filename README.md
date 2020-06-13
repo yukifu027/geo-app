@@ -18,13 +18,16 @@ https://travelgeographic.herokuapp.com/
 
 # DEMO
 
-1. トップページからログイン
+### 1. トップページからログイン
 
-![Mirai-app](fafb49f70f9e7f43b5ccdb7b95a16851.gif)
+![Geo-app](fafb49f70f9e7f43b5ccdb7b95a16851.gif)
 
-2. 検索欄または一覧から気になる遺産を選ぶ（初期データとして登録されている）
+### 2. ガイドを探す
+#### 2-1. インクリメンタルサーチ
 
-![Mirai-app](https://i.gyazo.com/9b8b3cb81b37e34e24743a877f3947e2.jpg)
+![Geo-app](https://i.gyazo.com/9b8b3cb81b37e34e24743a877f3947e2.jpg)
+
+#### 2-2. 日本地図
 
 3.　負の遺産へのレビューを行う
 

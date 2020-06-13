@@ -33,11 +33,11 @@ https://travelgeographic.herokuapp.com/
 
 ### 3. お気に入り登録または購入
 
-![M\i-app](d781605cd975f7abcc70e9075fa78da1.gif)
+![Geo-app](d781605cd975f7abcc70e9075fa78da1.gif)
 
 ### 4. レビュー
 
-![Mirai-app](https://i.gyazo.com/35ebf5050ef81da56919b575e68ccd4c.png)
+![Geo-app](https://i.gyazo.com/cf87ab4baee4df82447f2a825791f5f8.png)
 
 # 工夫したポイント
 - ローディングアニメーションを実装し、ユーザーにインパクトのあるUIを心がけました。

@@ -31,11 +31,11 @@ https://travelgeographic.herokuapp.com/
 
 ![Geo-app](520514194092b94eb2f56b3134233fe8.gif)
 
-3.　負の遺産へのレビューを行う
+### 3. お気に入り登録または購入
 
 ![M\i-app](520514194092b94eb2f56b3134233fe8.gif)
 
-（4. ユーザー自ら遺産の追加も可能）
+### 4. レビュー
 
 ![Mirai-app](https://i.gyazo.com/35ebf5050ef81da56919b575e68ccd4c.png)
 

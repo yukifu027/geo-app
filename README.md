@@ -1,6 +1,7 @@
+<h2 align="center">Travel Geographic</h2>
+
 ![Geo-app](7e483251f01d80ac5c33bbe074341d69.gif)
 
-<h2 align="center">Travel Geographic</h2>
 
 # 概要
 **日本の美しい自然景観や文化景観の「なぜ？」を紐解き、旅先が好きになる・誇りに思えるデジタルガイドサービス**です。ユーザーは、気になるガイドを検索し、購入することができます。

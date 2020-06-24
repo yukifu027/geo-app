@@ -1,4 +1,7 @@
 @import "reset";
+@import "config/color";
+@import "mixin/area";
+@import "mixin/side";
 @import "modules/side_bar";
 @import "modules/main_guide";
 @import "modules/header";

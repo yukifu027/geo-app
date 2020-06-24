@@ -16,8 +16,7 @@
         &__image{
           width: 55px;
           height: 55px;
-          border-radius: 50%;
-          object-fit: cover;
+          @include profileimage();
         }
         &__name{
           text-align: center;
@@ -33,55 +32,9 @@
     }
   }
   &__like{
-    width: 230px;
-    height: 300px;
-    border-top: 1px ridge;
-    overflow: scroll;
-    .title{
-      text-align: center;
-      margin: 10px 0 20px 0;
-      font-weight: bold;
-    }
-    .contents{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      &__image{
-        width: 80px;
-        height: 70px;
-        border-radius: 10%;          
-        object-fit: cover;
-      }
-      &__image:hover{
-        transform: scale(1.1, 1.1);
-        transition: 0.5s;
-      }
-    }
+    @include side()
   }
   &__buy{
-    width: 230px;
-    height: 300px;
-    border-top: 1px ridge;
-    overflow: scroll;
-    .title{
-      text-align: center;
-      font-weight: bold;
-      margin: 10px 0 20px 0;
-    }
-    .contents{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      &__image{
-        width: 80px;
-        height: 70px;
-        border-radius: 10%;          
-        object-fit: cover;
-      }
-      &__image:hover{
-        transform: scale(1.1, 1.1);
-        transition: 0.5s;
-      }
-    }
+    @include side()
   }
 }

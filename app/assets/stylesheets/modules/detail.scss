@@ -2,7 +2,7 @@
   float: right;
   height: calc(100vh - 50px);
   width: calc(100% - 250px);
-  background-color: #f5f5f5;
+  background-color: $gray;
   overflow: scroll;
   .contents{
     .content{

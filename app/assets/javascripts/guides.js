@@ -27,7 +27,7 @@ $(function(){
     })
       .done(function(guides_key) {
         $("#guide-search-result").empty();
-
+        
         if (guides_key.length !== 0) {
           guides_key.forEach(function(guide) {
             addGuide(guide);

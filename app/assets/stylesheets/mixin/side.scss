@@ -1,0 +1,31 @@
+@mixin side(){
+  width: 230px;
+  height: 300px;
+  border-top: 1px ridge;
+  overflow: scroll;
+  .title{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-weight: bold;
+  }
+  .contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__image{
+      width: 80px;
+      height: 70px;
+      border-radius: 10%;          
+      object-fit: cover;
+    }
+    &__image:hover{
+      transform: scale(1.1, 1.1);
+      transition: 0.5s;
+    }
+  }
+}
+
+@mixin profileimage(){
+  border-radius: 50%;
+  object-fit: cover;
+}

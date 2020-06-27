@@ -1,8 +1,10 @@
 class GuidesController < ApplicationController
   require 'payjp'
+  before_action :set_guide, only: [:pay, :show]
+  before_action :set_like, only: [:index, :show]
+  before_action :set_sold, only: [:index, :show]
 
   def pay
-    @guide = Guide.find(params[:id])
     Payjp.api_key = "sk_test_75a1cf07d11562a783711721"
     Payjp::Charge.create(
       amount: @guide.price, 
@@ -32,18 +34,27 @@ class GuidesController < ApplicationController
     @guides_chugoku = Guide.where(area: "中国")
     @guides_shikoku = Guide.where(area: "四国")
     @guides_kyushu = Guide.where(area: "九州")
-    @likes = Like.where(user_id: current_user.id)
-    @solds = UserGuide.where(user_id: current_user.id)
   end
 
   def show
     @user = User.find(params[:id])
-    @guide = Guide.find(params[:id])
     @comment = Comment.new
     @comments = @guide.comments.includes(:user)
     @likes_count = Like.where(guide_id: @guide.id).count
-    @likes = Like.where(user_id: current_user.id)
-    @solds = UserGuide.where(user_id: current_user.id)
   end
 
+  private
+
+  def set_guide
+    @guide = Guide.find(params[:id])
+  end
+
+  def set_like
+    @likes = Like.where(user_id: current_user.id)
+  end
+
+  def set_sold
+    @solds = UserGuide.where(user_id: current_user.id)
+  end
+  
 end
